@@ -5,5 +5,8 @@
     <Setting Name="ConsoleAppForNAV_CustomerService_PageWithCapitalization_Service" Type="(Web Service URL)" Scope="Application">
       <Value Profile="(Default)">http://junit:7067/DynamicsNAV90/WS/CRONUS%20International%20Ltd./Page/PageWithCapitalization</Value>
     </Setting>
+    <Setting Name="ConsoleAppForNAV_LettersService_MyLetters" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://junit:7067/DynamicsNAV90/WS/CRONUS%20International%20Ltd./Codeunit/MyLetters</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

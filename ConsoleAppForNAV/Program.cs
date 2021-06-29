@@ -7,11 +7,32 @@ using System.Threading.Tasks;
 namespace ConsoleAppForNAV
 {
     using CustomerService;
+    using LettersService;
+  
 
     class Program
     {
         static void Main(string[] args)
         {
+
+            // Create an instance of letters service
+            MyLetters myLetters = new MyLetters();
+           // myLetters.UseDefaultCredentials = true;
+            Console.WriteLine(myLetters.Url);
+
+            // Declare variables to work with
+            string input, output;
+            input = "Hello my good friend";
+
+            // Call MS NAV codeunit web service
+            output = myLetters.Capitalize(input);
+            Console.WriteLine("Result: {0}", output);
+
+            // keep console open
+            Console.ReadLine();
+
+           
+            /*
             // Create instance of service and set credentials
             PageWithCapitalization_Service service = new PageWithCapitalization_Service();
             service.UseDefaultCredentials = true;
@@ -42,6 +63,8 @@ namespace ConsoleAppForNAV
              service.Delete(cust.Key);
             */
 
+            /*
+
             PageWithCapitalization_Filter filter = new PageWithCapitalization_Filter();
             filter.Field = PageWithCapitalization_Fields.Name;
             filter.Criteria = "SSE*";
@@ -53,7 +76,8 @@ namespace ConsoleAppForNAV
                 Console.WriteLine("Customer name is " + c.Name + " and address is " + c.Address);
             }
 
-
+            */
+         
 
 
         }

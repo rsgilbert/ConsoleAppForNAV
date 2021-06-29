@@ -33,5 +33,16 @@ namespace ConsoleAppForNAV.Properties {
                 return ((string)(this["ConsoleAppForNAV_CustomerService_PageWithCapitalization_Service"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://junit:7067/DynamicsNAV90/WS/CRONUS%20International%20Ltd./Codeunit/MyLette" +
+            "rs")]
+        public string ConsoleAppForNAV_LettersService_MyLetters {
+            get {
+                return ((string)(this["ConsoleAppForNAV_LettersService_MyLetters"]));
+            }
+        }
     }
 }

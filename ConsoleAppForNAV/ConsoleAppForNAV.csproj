@@ -59,6 +59,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.map</DependentUpon>
     </Compile>
+    <Compile Include="Web References\LettersService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -74,6 +79,11 @@
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <None Include="Web References\LettersService\MyLetters.wsdl" />
+    <None Include="Web References\LettersService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
@@ -82,6 +92,17 @@
     <WebReferences Include="Web References\" />
   </ItemGroup>
   <ItemGroup>
+    <WebReferenceUrl Include="http://junit:7067/DynamicsNAV90/WS/CRONUS%2520International%2520Ltd./Codeunit/MyLetters">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\LettersService\</RelPath>
+      <UpdateFromURL>http://junit:7067/DynamicsNAV90/WS/CRONUS%2520International%2520Ltd./Codeunit/MyLetters</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>ConsoleAppForNAV_LettersService_MyLetters</CachedSettingsPropName>
+    </WebReferenceUrl>
     <WebReferenceUrl Include="http://junit:7067/DynamicsNAV90/WS/CRONUS%2520International%2520Ltd./Page/PageWithCapitalization">
       <UrlBehavior>Dynamic</UrlBehavior>
       <RelPath>Web References\CustomerService\</RelPath>
